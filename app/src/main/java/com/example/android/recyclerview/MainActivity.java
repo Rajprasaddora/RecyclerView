@@ -26,7 +26,7 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
         RecyclerView recyclerView= (RecyclerView) findViewById(R.id.recyclerview);
         ref= FirebaseDatabase.getInstance().getReference("questions");
-        i=9;
+        i=10;
         ref.addValueEventListener(new ValueEventListener() {
             @Override
             public void onDataChange(@NonNull DataSnapshot dataSnapshot) {
